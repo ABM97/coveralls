@@ -1,4 +1,16 @@
 coverage:
-  precision: 2
-  round: down
-  range: "98...100"
+  status:
+    project:
+      default:
+        # basic
+        target: auto
+        threshold: 99
+        base: auto 
+        # advanced
+        branches: null
+        if_no_uploads: error
+        if_not_found: success
+        if_ci_failed: error
+        only_pulls: false
+        flags: null
+        paths: null
