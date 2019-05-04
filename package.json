@@ -9,7 +9,7 @@
   "scripts": {
     "test": "mocha ./test/test.js --timeout 10000 --exit",
     "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
-    "coveralls": "npm run coverage  && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run coverage  && codecov"
   },
   "dependencies": {
     "blanket": "^1.2.3",

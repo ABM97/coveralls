@@ -3,10 +3,13 @@ node_js:
   - "10"
 before_install:
   - npm i -g nyc
+install:
+  - npm install -g codecov
+env:
+  - CODECOV_TOKEN="845bd667-2aef-4efe-9c43-21b3703dbff3"
 services:
   - postgresql
 before_script:
-  - npm install coveralls -global
   - psql -c 'create database games;' -U postgres
 script:
   - npm run coveralls
