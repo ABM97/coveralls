@@ -4,7 +4,7 @@ coverage:
       default:
         # basic
         target: auto
-        threshold: 99
+        threshold: 100%
         base: auto 
         # advanced
         branches: null
