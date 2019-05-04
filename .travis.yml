@@ -6,6 +6,7 @@ before_install:
 services:
   - postgresql
 before_script:
+  - npm install coveralls -global
   - psql -c 'create database games;' -U postgres
 script:
   - npm run coveralls
