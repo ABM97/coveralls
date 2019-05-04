@@ -1,0 +1,33 @@
+{
+  "name": "coveralls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha ./test/test.js --timeout 10000 --exit",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
+    "coveralls": "npm run coverage  && cat ./coverage/lcov.info | coveralls"
+  },
+  "dependencies": {
+    "blanket": "^1.2.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "config": "^3.1.0",
+    "expect": "^24.7.1",
+    "express": "^4.15.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.0",
+    "pg": "^6.2.2",
+    "pg-hstore": "^2.3.2",
+    "request": "^2.88.0",
+    "sequelize": "^5.8.3",
+    "coveralls": "^3.0.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
